@@ -67,6 +67,18 @@ public class MainActivity extends AppCompatActivity {
     public void displayForTeamA(int score) {
         TextView scoreView = (TextView) findViewById(R.id.team_a_score);
         scoreView.setText(String.valueOf(score));
+
+        if (scoreTeamA > 20) {
+            scoreTeamB = score;
+            scoreView.setText("Winner");
+            if (scoreTeamB < scoreTeamA) {
+                scoreView.setText("Loser");
+            } else {
+                scoreView.setText("Winner");
+            }
+        } else {
+            scoreView.setText("Loser");
+        }
     }
 
     /**
@@ -81,7 +93,7 @@ public class MainActivity extends AppCompatActivity {
      * Increase the score for Team B by 3 points.
      */
     public void addThreeForTeamB(View v) {
-        scoreTeamB= scoreTeamB + 3;
+        scoreTeamB = scoreTeamB + 3;
         displayForTeamB(scoreTeamB);
     }
 
