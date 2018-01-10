@@ -68,17 +68,17 @@ public class MainActivity extends AppCompatActivity {
         TextView scoreView = (TextView) findViewById(R.id.team_a_score);
         scoreView.setText(String.valueOf(score));
 
-        if (scoreTeamA > 20) {
-            scoreTeamB = score;
-            scoreView.setText("Winner");
-            if (scoreTeamB < scoreTeamA) {
-                scoreView.setText("Loser");
-            } else {
-                scoreView.setText("Winner");
-            }
-        } else {
-            scoreView.setText("Loser");
-        }
+        //if (scoreTeamA > 20) {
+            //scoreTeamB = score;
+            //scoreView.setText("Winner");
+            //if (scoreTeamB < scoreTeamA) {
+                //scoreView.setText("Loser");
+           // } else {
+                //scoreView.setText("Winner");
+            //}
+        //} else {
+            //scoreView.setText("Loser");
+       // }
     }
 
     /**
@@ -111,6 +111,18 @@ public class MainActivity extends AppCompatActivity {
     public void displayForTeamB(int score) {
         TextView scoreView = (TextView) findViewById(R.id.team_b_score);
         scoreView.setText(String.valueOf(score));
+
+        //if (scoreTeamB > 20) {
+           // scoreTeamA = score;
+            //scoreView.setText("Winner");
+           // if (scoreTeamA < scoreTeamB) {
+                //scoreView.setText("Loser");
+           // } else {
+               // scoreView.setText("Winner");
+            //}
+       // } else {
+            //scoreView.setText("Loser");
+       // }
     }
 
     /**

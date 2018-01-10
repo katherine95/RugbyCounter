@@ -5,6 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/rugby3"
+    android:scaleType="centerCrop"
     tools:context="com.example.android.rugbycounter.MainActivity">
 
     <LinearLayout
@@ -27,7 +29,7 @@
                 android:gravity="center_horizontal"
                 android:padding="4dp"
                 android:text="@string/team_A"
-                android:textColor="#616161"
+                android:textColor="#FFD600"
                 android:textSize="28sp" />
 
             <TextView
@@ -39,7 +41,7 @@
                 android:gravity="center_horizontal"
                 android:padding="4dp"
                 android:text="0"
-                android:textColor="#000000"
+                android:textColor="#F4FF81"
                 android:textSize="56sp" />
 
             <Button
@@ -93,7 +95,7 @@
                 android:gravity="center_horizontal"
                 android:padding="4dp"
                 android:text="@string/team_B"
-                android:textColor="#616161"
+                android:textColor="#FFD600"
                 android:textSize="28sp" />
 
             <TextView
@@ -105,7 +107,7 @@
                 android:gravity="center_horizontal"
                 android:padding="4dp"
                 android:text="0"
-                android:textColor="#000000"
+                android:textColor="#F4FF81"
                 android:textSize="56sp" />
 
             <Button
